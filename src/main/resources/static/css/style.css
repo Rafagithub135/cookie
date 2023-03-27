@@ -1,0 +1,14 @@
+.navbar {
+    font-weight: bold;
+    color: khaki;
+    background-color: maroon;
+    border: 0;
+    font-size: 12px !important;
+}
+
+.footer {
+    background-color: deepskyblue;
+    border: 0;
+    font-size: 12px !important;
+    margin-top: auto;
+}
