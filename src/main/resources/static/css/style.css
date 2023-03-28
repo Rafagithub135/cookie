@@ -1,13 +1,28 @@
+body {
+    background-color: black;
+}
+
 .navbar {
     font-weight: bold;
     color: khaki;
-    background-color: maroon;
+    background-color: #732009;
     border: 0;
     font-size: 12px !important;
 }
 
+.nav-link {
+    color: khaki;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: khaki;
+}
+
 .footer {
-    background-color: deepskyblue;
+    background-color: #02B0BB;
     border: 0;
     font-size: 12px !important;
     margin-top: auto;
