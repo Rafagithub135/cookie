@@ -5,7 +5,8 @@
 <body>
 <nav th:replace="~{partials :: navbar}"></nav>
 <div>
-  <img src="/img/menu.jpg" alt="Drink Menu" class="drinks">
+    <h1 th:text="${post.title}"></h1>
+    <p th:text="${post.body}"></p>
 </div>
 <div th:replace="~{partials :: boot-scripts}"></div>
 <footer th:replace="~{partials :: footer}"></footer>

@@ -21,6 +21,28 @@ body {
     color: khaki;
 }
 
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: khaki;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+}
+
+.drinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .footer {
     background-color: #02B0BB;
     border: 0;
