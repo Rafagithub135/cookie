@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{partials :: head ('Cookie\'s Place')}">
+<head th:replace="~{partials :: head ('Contact Cookie\'s Place')}">
 </head>
 <body>
 <nav th:replace="~{partials :: navbar}"></nav>
-<div>
-
+<div class="contact-container">
+    <main>
+        <div>
+            <h1>Cookie's Contact Information</h1>
+        </div>
+        <br>
+        <div>
+            <p>Address: 1314 South 36th Street
+                <br>
+                Philadelphia, Pennsylvania 19146</p>
+        </div>
+        <br>
+        <div>
+            <p>Phone: () -</p>
+        </div>
+        <br>
+        <div>
+            <p>Email: </p>
+        </div>
+    </main>
 </div>
 <div th:replace="~{partials :: boot-scripts}"></div>
 <footer th:replace="~{partials :: footer}"></footer>
