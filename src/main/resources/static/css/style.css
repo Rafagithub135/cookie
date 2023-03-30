@@ -10,7 +10,15 @@ body {
     font-size: 12px !important;
 }
 
+.navbar-title {
+    color: khaki;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 .nav-link {
+    display: flex;
+    justify-content: flex-end;
     color: khaki;
 }
 

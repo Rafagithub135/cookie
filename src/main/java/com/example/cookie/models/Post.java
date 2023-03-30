@@ -13,7 +13,6 @@ public class Post {
     @Column(nullable = false)
     private String body;
 
-
     public Post() {
     }
 
@@ -28,4 +27,27 @@ public class Post {
         this.body = body;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
 }
