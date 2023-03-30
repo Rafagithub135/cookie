@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class PostController {
@@ -21,16 +20,14 @@ public class PostController {
 
     @GetMapping("/posts")
     public String postsHome(Model model) {
-        ArrayList<Post> posts = new ArrayList<Post>();
-        posts.add(new Post(1, "Post 1", "This is the first post"));
-        posts.add(new Post(2, "Post 2", "This is the second post"));
+        List<Post> posts = postDao.findAll();
         model.addAttribute("posts", posts);
         return "posts/index";
     }
 
     @GetMapping("/posts/{id}")
     public String postsView(@PathVariable long id, Model model) {
-        Post post = new Post(id, "Post 1", "This is the first post");
+        Post post = postDao.findPostById(id);
         model.addAttribute("post", post);
         return "posts/show";
     }
