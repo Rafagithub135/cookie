@@ -16,6 +16,11 @@ body {
     text-decoration: none;
 }
 
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .nav-link {
     display: flex;
     justify-content: flex-end;
@@ -49,6 +54,14 @@ body {
     align-items: center;
     max-height: 100%;
     max-width: 100%;
+}
+
+.bookform {
+    color: wheat;
+}
+
+.disclaimer {
+    color: wheat;
 }
 
 .footer {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{partials :: head ('Book an Event')}">
+</head>
+<body>
+<nav th:replace="~{partials :: navbar}"></nav>
+<div>
+    <form action="/book" method="post" class="bookform">
+        <h1>Request to book an event.</h1>
+        <label for="title">Event Title</label>
+        <input type="text" name="title" id="title">
+        <br>
+        <label for="date">Date</label>
+        <input type="text" name="date" id="date">
+        <br>
+        <label for="settime">Set Up Time</label>
+        <input type="text" name="settime" id="settime">
+        <br>
+        <label for="starttime">Start Time</label>
+        <input type="text" name="starttime" id="starttime">
+        <br>
+        <label for="endtime">End Time (Not later than 11:00 PM)</label>
+        <input type="text" name="endtime" id="endtime">
+        <br>
+        <h2>Organizer Information</h2>
+        <label for="sponsor">Sponsor of Event</label>
+        <input type="text" name="sponsor" id="sponsor">
+        <br>
+        <label for="contact">Contact Name</label>
+        <input type="text" name="contact" id="contact">
+        <br>
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" id="phone">
+        <label for="evephone">Evening Phone</label>
+        <input type="text" name="evephone" id="evephone">
+        <br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <br>
+        <label for="insurance">Is The Event Insured? Check box if YES. *</label>
+        <input type="checkbox" id="insurance">
+        <label for="insuror">Event Insuring Agent</label>
+        <input type="text" name="insuror" id="insuror">
+        <br>
+        <label for="policynum">Insurance Policy #</label>
+        <input type="text" name="policynum" id="policynum">
+        <br>
+        <label for="exdate">Expiration Date</label>
+        <input type="text" name="exdate" id="exdate">
+        <br>
+    </form>
+    <p class="disclaimer">* - If the event is not insured, the sponsor of the event assumes any liability related to the event caused by any person or persons, invited or not, at the event.</p>
+</div>
+<div th:replace="~{partials :: boot-scripts}"></div>
+<footer th:replace="~{partials :: footer}"></footer>
+</body>
+</html>
