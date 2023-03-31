@@ -56,8 +56,24 @@ body {
     max-width: 100%;
 }
 
+.container {
+    color: wheat;
+    margin: 3em;
+    padding: 1em;
+}
+
 .bookform {
     color: wheat;
+    margin: 3em;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    background-color: #02B0BB;
 }
 
 .disclaimer {
@@ -69,4 +85,9 @@ body {
     border: 0;
     font-size: 12px !important;
     margin-top: auto;
+}
+
+.foot-text {
+    padding-top: .5em;
+    margin-left: 1em;
 }
