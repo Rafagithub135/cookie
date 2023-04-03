@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="~{partials :: head ('Create A New Review')}">
+    <title>Create A Post</title>
 </head>
 <body>
 <nav th:replace="~{partials :: navbar}"></nav>
@@ -9,11 +10,11 @@
         <label for="title">Post Title</label>
         <input type="text" name="title" id="title">
         <br>
-        <label for="body">Post Body</label>
+        <label for="body">Message</label>
         <br>
-        <textarea name="body" id="body" cols="50" rows="20"></textarea>
+        <textarea name="body" id="body" cols="50" rows="20" placeholder="Tell us what you think. How did you like the show? Do you have any suggestions or ideas?"></textarea>
         <br>
-        <button class="btn footer-bg" type="submit" value="Create Post">Submit Post</button>
+        <button class="btn mkpost" type="submit" value="Create Post">Submit Post</button>
     </form>
 </div>
 <div th:replace="~{partials :: boot-scripts}"></div>

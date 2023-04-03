@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="~{partials :: head ('About Cookie\'s Place')}">
+    <title>About Cookie's Place</title>
 </head>
 <body>
-<nav th:replace="~{partials :: navbar}"></nav>
-<div>
-    <p class="about">Cookie's Place is an entertainment hall located in southwest Philadelphia on 36th Street.</p>
-    <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laboriosam maxime minus natus quo saepe sint tenetur vero! Corporis facilis, fuga in ipsum modi molestiae nemo numquam praesentium reiciendis tempora?</p>
-</div>
+<main>
+    <nav th:replace="~{partials :: navbar}"></nav>
+    <div>
+        <p class="about">Cookie's Place is an entertainment hall located in southwest Philadelphia on 36th Street.</p>
+        <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laboriosam maxime minus natus quo
+            saepe sint tenetur vero! Corporis facilis, fuga in ipsum modi molestiae nemo numquam praesentium reiciendis
+            tempora?</p>
+    </div>
+</main>
 <div th:replace="~{partials :: boot-scripts}"></div>
 <footer th:replace="~{partials :: footer}"></footer>
 </body>

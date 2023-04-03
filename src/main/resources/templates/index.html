@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="~{partials :: head ('Cookie\'s Place')}">
+    <title>Cookie's Place</title>
 </head>
 <body>
 <nav th:replace="~{partials :: navbar}"></nav>
 <div>
-<img src="img/she_believed.jpg" alt="She Believed">
+    <img src="/img/she_believed.jpg" alt="She Believed">
+    <img src="/img/martini_glass.jpg" alt="martini">
 </div>
 <div th:replace="~{partials :: boot-scripts}"></div>
 <footer th:replace="~{partials :: footer}"></footer>
