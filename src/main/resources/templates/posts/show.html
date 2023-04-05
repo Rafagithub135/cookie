@@ -5,8 +5,8 @@
 <body>
 <nav th:replace="~{partials :: navbar}"></nav>
 <div>
-    <h1 th:text="${post.title}"></h1>
-    <p th:text="${post.body}"></p>
+    <h1 th:text="${post.title}" class="post-title"></h1>
+    <p th:text="${post.body}" class="post-body"></p>
     <a href="/posts/create">Edit Post</a>
 </div>
 <div th:replace="~{partials :: boot-scripts}"></div>

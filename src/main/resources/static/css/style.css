@@ -69,6 +69,14 @@ body {
     padding: 1em;
 }
 
+.post-title {
+    color: blue;
+}
+
+.post-body {
+    color: wheat;
+}
+
 .bookform {
     color: wheat;
     margin: 3em;
