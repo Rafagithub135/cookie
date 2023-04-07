@@ -7,7 +7,10 @@
 <nav th:replace="~{partials :: navbar}"></nav>
 <div class="container">
     <form action="/posts/create" method="post">
-        <label for="title">Post Title</label>
+        <label for="date">Show/Event Date</label>
+        <input type="text" name="date" id="date">
+        <br>
+        <label for="title">Title</label>
         <input type="text" name="title" id="title">
         <br>
         <label for="body">Message</label>
