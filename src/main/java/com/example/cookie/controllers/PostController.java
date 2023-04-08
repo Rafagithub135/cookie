@@ -43,4 +43,9 @@ public class PostController {
         postDao.save(post);
         return "redirect:/posts";
     }
+
+    @GetMapping("/posts/view")
+    public String viewPost() {
+        return "posts/show";
+    }
 }
