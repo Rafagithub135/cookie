@@ -46,6 +46,6 @@ public class PostController {
 
     @PostMapping("/posts/view")
     public String viewPost() {
-        return "redirect: posts/show";
+        return "redirect: posts";
     }
 }
