@@ -24,8 +24,7 @@ import jakarta.persistence.*;
         public Event() {
         }
 
-    public Event(long id, String date, String time, String title, String guests) {
-        this.id = id;
+    public Event(String date, String time, String title, String guests) {
         this.date = date;
         this.time = time;
         this.title = title;
