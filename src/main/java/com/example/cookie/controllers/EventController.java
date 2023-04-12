@@ -9,4 +9,9 @@ public class EventController {
     public String book() {
         return "events/book";
     }
+
+    @GetMapping("/events/upcoming")
+    public String list() {
+        return "events/upcoming";
+    }
 }
